@@ -31,6 +31,9 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_ARCORE := true
 IS_PHONE := true
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 PRODUCT_NAME := du_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
