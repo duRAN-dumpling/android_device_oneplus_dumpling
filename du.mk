@@ -25,6 +25,12 @@ $(call inherit-product, device/oneplus/dumpling/device.mk)
 # Inherit some common DU stuff.
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
+# duRAN stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_ARCORE := true
+IS_PHONE := true
+
 PRODUCT_NAME := du_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
